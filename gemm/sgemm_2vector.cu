@@ -154,9 +154,9 @@ __global__ void __launch_bounds__((BM * BN) / (TM * TN), 1) sgemm_vectorize_kern
 
 void run_sgemm_vectorize(float *A, float *B, float *C, int m, int n, int k)
 {
-    const uint BK = 16;
+    const uint BK = 8;
     const uint TM = 8;
-    const uint TN = 16;
+    const uint TN = 8;
 
     const uint BM = 64;
     const uint BN = 64;
