@@ -8,7 +8,7 @@
 3. sgemm的各类优化，2维线程块划分，向量化读取，warp级分块，双缓冲区
 4. flash attention v1
 
-有些kernel还配套创建了`XX_try.cu`文件，在理解了kernel实现细节之后可以在`XX_try.cu`文件中删除掉带有`core kernel` Tag的方法的实现内容，然后自己去实现以便，如果实现无误会显示结果正确的输出。
+有些kernel还配套创建了`XX_try.cu`文件，在理解了kernel实现细节之后可以在`XX_try.cu`文件中删除掉带有`core kernel` Tag的方法的实现内容，然后自己去实现，编译执行后，如果实现无误会显示结果输出正确。
 
 ## 使用方法：
 本仓库提供了基本的编译脚本`make_shell.sh`
