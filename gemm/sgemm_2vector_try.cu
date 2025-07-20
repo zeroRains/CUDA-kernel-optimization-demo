@@ -46,6 +46,7 @@ void sgemm_naive_cpu(float *A, float *B, float *C, int M, int N, int K)
 // Template parameters:
 // BM, BN, BK: dimensions of the block
 // TM: number of threads per block
+// !!!core kernel
 template <const int BM, const int BN, const int BK, const int TM, const int TN>
 __global__ void __launch_bounds__((BM * BN) / (TM * TN), 1) sgemm_vectorize_kernel(float *A, float *B, float *C, int M, int N, int K)
 {

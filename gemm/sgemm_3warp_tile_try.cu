@@ -36,6 +36,7 @@ void sgemm_naive_cpu(float *A, float *B, float *C, int M, int N, int K)
  * @tparam TM The per-thread tile size for M dimension.
  * @tparam TN The per-thread tile size for N dimension.
  */
+// !!!core kernel
 template <const int BM,          // 64
           const int BN,          // 64
           const int BK,          // 8

@@ -39,6 +39,7 @@ void sgemm_naive_cpu(float *A, float *B, float *C, int M, int N, int K)
 // BM(64), BN(64), BK(8): dimensions of the block
 // TM: number of threads per block
 // 64, 64, 8, 8, 8 <<<(4,4), (8*8) >>>
+// !!!core kernel
 template <const int BM, const int BN, const int BK, const int TM, const int TN>
 __global__ void __launch_bounds__((BM * BN) / (TM * TN), 1) sgemm_blocktiling_2d_kernel(float *A, float *B, float *C, int M, int N, int K)
 {
