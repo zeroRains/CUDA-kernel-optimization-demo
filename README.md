@@ -1,4 +1,4 @@
-CUDA Kernal基本优化思路DEMO
+# CUDA Kernal基本优化思路DEMO
 
 本仓库用于记录一些kernel的优化思路的一些实现demo，以便于个人理解和学习。
 
@@ -10,7 +10,7 @@ CUDA Kernal基本优化思路DEMO
 
 有些kernel还配套创建了`XX_try.cu`文件，在理解了kernel实现细节之后可以在`XX_try.cu`文件中删除掉带有`core kernel` Tag的方法的实现内容，然后自己去实现以便，如果实现无误会显示结果正确的输出。
 
-使用方法：
+## 使用方法：
 本仓库提供了基本的编译脚本`make_shell.sh`
 ```shell
 
